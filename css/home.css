@@ -192,14 +192,8 @@ header nav .join {
 .gallery .gallTag {
   display: flex;
   margin-top: 10px;
+  margin-bottom: 10px;
   flex-flow: column;
-  height: 20px;
-  color: black;
-  font-size: 1.5rem;
-  font-family: 'Raleway', sans-serif;
-}
-.gallery .gallTag h4 {
-  margin: 5px;
 }
 .gallery .gallTag .reviews {
   align-self: flex-end;
@@ -235,6 +229,7 @@ footer .footerNav a {
 .container .quickLinks {
   display: flex;
   justify-content: space-around;
+  flex-flow: row wrap;
   margin-bottom: 50px;
 }
 .container hr {
@@ -256,6 +251,10 @@ footer .footerNav a {
   width: 342px;
   height: 207px;
 }
+.container .nearYou .gallery .gallOpt .gallImg .bookmark {
+  float: right;
+  margin: 10px;
+}
 .container .nearYou .gallery .gallOpt .imgOne {
   background-image: url(/img/foodplace1.png);
 }
@@ -264,4 +263,9 @@ footer .footerNav a {
 }
 .container .nearYou .gallery .gallOpt .imgThree {
   background-image: url(/img/foodplace3.png);
+}
+.container .nearYou .gallery .gallOpt .gallTag {
+  color: black;
+  font-size: 2rem;
+  font-family: 'Raleway', sans-serif;
 }

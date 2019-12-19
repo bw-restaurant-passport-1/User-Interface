@@ -175,14 +175,8 @@ header nav .join {
 .gallery .gallTag {
   display: flex;
   margin-top: 10px;
+  margin-bottom: 10px;
   flex-flow: column;
-  height: 20px;
-  color: black;
-  font-size: 1.5rem;
-  font-family: 'Raleway', sans-serif;
-}
-.gallery .gallTag h4 {
-  margin: 5px;
 }
 .gallery .gallTag .reviews {
   align-self: flex-end;
@@ -225,7 +219,7 @@ footer .footerNav a {
   font-family: 'Raleway', sans-serif;
 }
 .container .ourTeam {
-  width: 50%;
+  width: 65%;
   margin: 25px auto;
 }
 .container .ourTeam h2 {
@@ -234,7 +228,27 @@ footer .footerNav a {
   font-size: 3rem;
   font-family: 'Special Elite', cursive;
 }
-.container .ourTeam .gallery .gallOpt .gallImg .imgSz {
+.container .ourTeam .gallery .gallOpt {
   width: 200px;
-  border: 3px solid black;
+  height: 300px;
+  margin: 10px 5px 10px 5px;
+  background-color: #191970;
+}
+.container .ourTeam .gallery .gallOpt .gallImg .imgSz {
+  display: block;
+  margin: 15px auto 10px;
+  width: 150px;
+}
+.container .ourTeam .gallery .gallOpt .gallTag {
+  text-align: center;
+}
+.container .ourTeam .gallery .gallOpt .gallTag h4 {
+  color: #DAA520;
+  font-size: 2rem;
+  font-family: 'Girassol', cursive;
+}
+.container .ourTeam .gallery .gallOpt .gallTag h5 {
+  color: #DAA520;
+  font-size: 1.5rem;
+  font-family: 'Girassol', cursive;
 }
