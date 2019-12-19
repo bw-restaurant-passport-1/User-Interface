@@ -1,0 +1,32 @@
+
+@import './globals/reset.less';
+@import './globals/global.less';
+@import './globals/variables.less';
+@import './globals/mixins.less';
+@import './modules/navbar.less';
+@import './modules/galla.less';
+@import './modules/footer.less';
+
+.container{
+    .containerAttr;
+    .ourMission{
+        width: 65%;
+        margin: 0 auto;
+        text-align: center;
+        h2{
+            .otherFont(@goldenRod,3rem); }
+        p{
+            .bodyFont(black,1.5rem); }
+    }
+    .ourTeam{
+        width: 50%;
+        margin: 25px auto;
+        h2{
+            text-align: center;
+            .otherFont(@goldenRod,3rem);}
+        .gallery .gallOpt .gallImg .imgSz {
+                                     width: 200px;
+                                     border: 3px solid black;}        
+        
+    }
+};

@@ -4,7 +4,7 @@
 @import './globals/mixins.less';
 @import './modules/navbar.less';
 @import './modules/quickBox';
-@import './modules/restaurantGalla.less';
+@import './modules/galla.less';
 @import './modules/footer.less';
 
 
@@ -29,7 +29,19 @@
     .nearYou{
         h2{
             text-align: center;
+            margin-bottom: 50px;
             .otherFont(@midnightBlue,3rem);
+        }
+        .gallery .gallOpt .gallImg{ width: 342px;
+                                    height: 207px;}
+        .gallery .gallOpt .imgOne{
+            background-image: url(/img/foodplace1.png);
+        }
+        .gallery .gallOpt .imgTwo{
+            background-image: url(/img/foodplace2.png);
+        }
+        .gallery .gallOpt .imgThree{
+            background-image: url(/img/foodplace3.png);
         }
         margin-bottom: 80px;
     }

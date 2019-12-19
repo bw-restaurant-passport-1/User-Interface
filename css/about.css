@@ -167,23 +167,6 @@ header nav .join {
   color: white;
   background-color: #DAA520;
 }
-.quickBox {
-  width: 380px;
-}
-.quickBox img {
-  display: block;
-  margin: 0 auto;
-  margin-bottom: -20px;
-}
-.quickBox p {
-  height: 120px;
-  padding: 30px 0 0 0;
-  color: #191970;
-  font-size: 2.5rem;
-  font-family: 'Special Elite', cursive;
-  text-align: center;
-  border: #191970 solid 2px;
-}
 .gallery {
   display: flex;
   flex-flow: row wrap;
@@ -226,42 +209,32 @@ footer .footerNav a {
   width: 65%;
   max-width: 1280px;
 }
-.container .search {
-  width: 100%;
-  height: 459px;
-  background-image: url(/img/searchpicture.png);
-  margin-bottom: 50px;
-}
-.container .quickLinks {
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 50px;
-}
-.container hr {
-  width: 560px;
-  border: #191970 solid 3px;
-  margin-bottom: 50px;
-}
-.container .nearYou {
-  margin-bottom: 80px;
-}
-.container .nearYou h2 {
+.container .ourMission {
+  width: 65%;
+  margin: 0 auto;
   text-align: center;
-  margin-bottom: 50px;
-  color: #191970;
+}
+.container .ourMission h2 {
+  color: #DAA520;
   font-size: 3rem;
   font-family: 'Special Elite', cursive;
 }
-.container .nearYou .gallery .gallOpt .gallImg {
-  width: 342px;
-  height: 207px;
+.container .ourMission p {
+  color: black;
+  font-size: 1.5rem;
+  font-family: 'Raleway', sans-serif;
 }
-.container .nearYou .gallery .gallOpt .imgOne {
-  background-image: url(/img/foodplace1.png);
+.container .ourTeam {
+  width: 50%;
+  margin: 25px auto;
 }
-.container .nearYou .gallery .gallOpt .imgTwo {
-  background-image: url(/img/foodplace2.png);
+.container .ourTeam h2 {
+  text-align: center;
+  color: #DAA520;
+  font-size: 3rem;
+  font-family: 'Special Elite', cursive;
 }
-.container .nearYou .gallery .gallOpt .imgThree {
-  background-image: url(/img/foodplace3.png);
+.container .ourTeam .gallery .gallOpt .gallImg .imgSz {
+  width: 200px;
+  border: 3px solid black;
 }
