@@ -1,0 +1,36 @@
+@import './globals/reset.less';
+@import './globals/global.less';
+@import './globals/variables.less';
+@import './globals/mixins.less';
+@import './modules/navbar.less';
+@import './modules/quickBox';
+@import './modules/restaurantGalla.less';
+@import './modules/footer.less';
+
+
+.container{
+    .containerAttr;
+    .search{
+        width: 100%;
+        height: 459px;
+        background-image: url(/img/searchpicture.png);
+        margin-bottom: 50px;
+    }
+    .quickLinks{
+        display:flex;
+        justify-content: space-around;
+        margin-bottom: 50px;
+    }
+    hr{
+        width: 560px;
+        border:@midnightBlue solid 3px;
+        margin-bottom: 50px;
+    }
+    .nearYou{
+        h2{
+            text-align: center;
+            .otherFont(@midnightBlue,3rem);
+        }
+        margin-bottom: 80px;
+    }
+}
