@@ -139,6 +139,11 @@ html {
   width: 65%;
   max-width: 1280px;
 }
+.responsiveRow {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: wrap;
+}
 header {
   display: flex;
   justify-content: space-between;
@@ -157,7 +162,7 @@ header nav {
 }
 header nav a {
   text-align: center;
-  padding: 10px 15px 10px 15px;
+  padding: 10px 15px;
   color: #191970;
   font-size: 2rem;
   font-family: 'Special Elite', cursive;
@@ -186,8 +191,8 @@ header nav .join {
 }
 .gallery {
   display: flex;
-  flex-flow: row wrap;
   justify-content: space-around;
+  flex-flow: wrap;
 }
 .gallery .gallTag {
   display: flex;
@@ -200,9 +205,13 @@ header nav .join {
 }
 footer {
   background-color: #DAA520;
+  height: 170px;
 }
 footer .footerNav {
+  margin-top: 8.33333333px;
+  margin-left: 25px;
   height: 150px;
+  max-width: 350px;
   display: flex;
   flex-flow: column wrap;
 }
@@ -229,7 +238,7 @@ footer .footerNav a {
 .container .quickLinks {
   display: flex;
   justify-content: space-around;
-  flex-flow: row wrap;
+  flex-flow: wrap;
   margin-bottom: 50px;
 }
 .container hr {
@@ -238,7 +247,7 @@ footer .footerNav a {
   margin-bottom: 50px;
 }
 .container .nearYou {
-  margin-bottom: 80px;
+  margin-bottom: 50px;
 }
 .container .nearYou h2 {
   text-align: center;

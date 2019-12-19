@@ -11,21 +11,26 @@
     .containerAttr;
     .ourMission{
         width: 65%;
-        margin: 0 auto;
+        margin: 0 auto @sectionGap;
         text-align: center;
-        h2{ .otherFont(@goldenRod,3rem); }
+        h2{ 
+            margin-bottom: @innerSecGap;
+            .otherFont(@goldenRod,3rem);
+         }
         p{ .bodyFont(black,1.5rem); }
     }
     .ourTeam{
         width: 65%;
-        margin: 25px auto;
+        margin: 0 auto;
         h2{
+            margin-bottom: @innerSecGap;
             text-align: center;
-            .otherFont(@goldenRod,3rem);}
+            .otherFont(@goldenRod,3rem);
+        }
         .gallery .gallOpt{
             width: 200px;
             height: 300px;
-            margin: 10px 5px 10px 5px;
+            margin: 0 5px @sectionGap 5px;
             background-color: @midnightBlue;
             .gallImg .imgSz {
                 display: block;
@@ -34,8 +39,11 @@
             }
             .gallTag{
                 text-align: center;
-                h4{ .headerFont(@goldenRod,2rem);}
-                h5{ .headerFont(@goldenRod,1.5rem);}
+                h4{
+                    .headerFont(@goldenRod,2.5rem);
+                    margin-bottom: @innerSecGap/3;
+                }
+                h5{ .headerFont(@goldenRod,1.75rem);}
             } 
         }
             

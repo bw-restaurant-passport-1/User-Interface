@@ -139,6 +139,11 @@ html {
   width: 65%;
   max-width: 1280px;
 }
+.responsiveRow {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: wrap;
+}
 header {
   display: flex;
   justify-content: space-between;
@@ -157,7 +162,7 @@ header nav {
 }
 header nav a {
   text-align: center;
-  padding: 10px 15px 10px 15px;
+  padding: 10px 15px;
   color: #191970;
   font-size: 2rem;
   font-family: 'Special Elite', cursive;
@@ -169,8 +174,8 @@ header nav .join {
 }
 .gallery {
   display: flex;
-  flex-flow: row wrap;
   justify-content: space-around;
+  flex-flow: wrap;
 }
 .gallery .gallTag {
   display: flex;
@@ -183,9 +188,13 @@ header nav .join {
 }
 footer {
   background-color: #DAA520;
+  height: 170px;
 }
 footer .footerNav {
+  margin-top: 8.33333333px;
+  margin-left: 25px;
   height: 150px;
+  max-width: 350px;
   display: flex;
   flex-flow: column wrap;
 }
@@ -205,10 +214,11 @@ footer .footerNav a {
 }
 .container .ourMission {
   width: 65%;
-  margin: 0 auto;
+  margin: 0 auto 50px;
   text-align: center;
 }
 .container .ourMission h2 {
+  margin-bottom: 25px;
   color: #DAA520;
   font-size: 3rem;
   font-family: 'Special Elite', cursive;
@@ -220,9 +230,10 @@ footer .footerNav a {
 }
 .container .ourTeam {
   width: 65%;
-  margin: 25px auto;
+  margin: 0 auto;
 }
 .container .ourTeam h2 {
+  margin-bottom: 25px;
   text-align: center;
   color: #DAA520;
   font-size: 3rem;
@@ -231,7 +242,7 @@ footer .footerNav a {
 .container .ourTeam .gallery .gallOpt {
   width: 200px;
   height: 300px;
-  margin: 10px 5px 10px 5px;
+  margin: 0 5px 50px 5px;
   background-color: #191970;
 }
 .container .ourTeam .gallery .gallOpt .gallImg .imgSz {
@@ -244,11 +255,12 @@ footer .footerNav a {
 }
 .container .ourTeam .gallery .gallOpt .gallTag h4 {
   color: #DAA520;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-family: 'Girassol', cursive;
+  margin-bottom: 8.33333333px;
 }
 .container .ourTeam .gallery .gallOpt .gallTag h5 {
   color: #DAA520;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   font-family: 'Girassol', cursive;
 }
