@@ -139,6 +139,11 @@ html {
   width: 65%;
   max-width: 1280px;
 }
+@media (max-width:1000px) {
+  .containerAttr {
+    width: 100%;
+  }
+}
 .responsiveRow {
   display: flex;
   justify-content: space-around;
@@ -211,6 +216,11 @@ footer .footerNav a {
   margin: 0 auto;
   width: 65%;
   max-width: 1280px;
+}
+@media (max-width:1000px) {
+  .container {
+    width: 100%;
+  }
 }
 .container .ourMission {
   width: 65%;

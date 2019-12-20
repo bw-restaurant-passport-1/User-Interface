@@ -139,6 +139,11 @@ html {
   width: 65%;
   max-width: 1280px;
 }
+@media (max-width:1000px) {
+  .containerAttr {
+    width: 100%;
+  }
+}
 .responsiveRow {
   display: flex;
   justify-content: space-around;
@@ -171,6 +176,12 @@ header nav a {
 header nav .join {
   color: white;
   background-color: #DAA520;
+}
+.searchTool .input {
+  height: 30px;
+  width: 400px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 .quickBox {
   width: 380px;
@@ -229,11 +240,19 @@ footer .footerNav a {
   width: 65%;
   max-width: 1280px;
 }
-.container .search {
+@media (max-width:1000px) {
+  .container {
+    width: 100%;
+  }
+}
+.container .banner {
   width: 100%;
   height: 459px;
   background-image: url(/img/searchpicture.png);
   margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .container .quickLinks {
   display: flex;
