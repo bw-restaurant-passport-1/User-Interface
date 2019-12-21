@@ -21,4 +21,6 @@
         a) Tomorrow I'll hopefully complete those elements
 
 12/20 - Added the search bar, just need to work on the styling.
-      - Tablet banner change, the rest looks to fit just fine, done so by changing the  containerAttr
+      - Tablet banner change, the rest looks to fit just fine, done so by changing the  containerAttr (removed tablet @media, website scales better without a defined step for it)
+      - Mobile Layout Just needs to have a nav menu created.
+      - Created a Hamburger Menu using only CSS animations, will populate the screen with an overlay and access to all the nav bar options, this will only apear on mobile devices, tablet and desktop have the default nav bar ontop.

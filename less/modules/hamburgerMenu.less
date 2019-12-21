@@ -1,0 +1,122 @@
+.menuWrap{
+    visibility: hidden;
+    position:fixed;
+    top: @innerSecGap/1.5;
+    right: 70px;
+    z-index: 1;
+    @media(@mobile){
+        visibility: visible;
+    }
+    .toggle{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        opacity: 0;
+    }
+    .burger{
+       position: absolute;
+       top: 0;
+       left: 0;
+       z-index: 1;
+       width: 60px;
+       height: 60px; 
+       padding: 1rem;
+       background-color: @goldenRod;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       > div{
+           position: relative;
+           width: 100%;
+           height: 2px;
+           background-color: #ffffff;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           transition: all 0.4s ease;
+       }
+       > div:before,
+       > div:after{
+           content:'';
+           position: absolute;
+           z-index: 1;
+           top: -10px;
+           width: 100%;
+           height: 2px;
+           background-color: #ffffff;
+       }
+       > div::after{
+           top: 10px;
+       }   
+    }
+    .toggle:checked + .burger > div{
+        transform: rotate(135deg);
+    }
+    .toggle:checked + .burger > div:before,
+    .toggle:checked + .burger > div:after{
+        top:0;
+        transform: rotate(90deg);
+    }
+    .toggle:checked:hover + .burger > div{
+        transform: rotate(225deg);
+    }
+    .toggle:checked ~ .menu{
+        visibility: visible;
+        > div {
+            transform: scale(1);
+            transition-duration: 1s;
+            >div{
+                opacity: 1;
+                transition: opacity 0.4s ease;
+            }
+        }
+    }
+    .menu{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        visibility: hidden;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        > div {
+            background-color: @backgroundBlue;
+            border-radius: 50%;
+            width: 200vw;
+            height: 200vh;
+            display: flex;
+            flex: none;
+            align-items: center;
+            justify-content: center;
+            transform: scale(0);
+            transition: all 0.4s ease;
+            > div{
+                text-align: center;
+                max-width: 90vw;
+                max-height: 100vh;
+                opacity: 0;
+                transition: opacity 0.4s ease;
+                ul{
+                    list-style: none;
+                    .bodyFont(white,4rem);
+                    a{
+                        color: inherit;
+                        text-decoration: none;
+                        transition: color 0.4s ease;
+                    }
+                    a:hover{
+                        text-decoration: underline;
+                    }
+
+                }
+            }
+        }
+    }
+}
