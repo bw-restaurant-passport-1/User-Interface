@@ -2,7 +2,9 @@
 <html>
     <head>
         <link href="https://fonts.googleapis.com/css?family=Girassol|Raleway|Special+Elite&display=swap" rel="stylesheet">
-        <link href="css/home.css" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="./css/home.css" rel="stylesheet">
+        
         <title>Restaurant Passport</title>
     </head>
     <div class="menuWrap">
@@ -14,7 +16,7 @@
                     <ul>
                         <li><a href="home.html">Home</a></li>
                         <br>
-                        <li><a href="#">About</a></li>
+                        <li><a href="about.html">About</a></li>
                         <br>
                         <li><a href="#">Sign In</a></li>
                         <br>
@@ -26,32 +28,31 @@
     </div>
     <div class="container">
         <header>
-            <h1>RESTAURANT PASSPORT</h1>
+            <a href="home.html">RESTAURANT PASSPORT</a>
             <nav>
-                <a href="/about.html">About</a>
+                <a href="./about.html">About</a>
                 <a href="#">Sign In</a>
                 <a href="#" class="join">Join</a>
             </nav>
         </header>
         <section class = "banner">
-            <!-- CREATE THE SEARCH < BUT HOOOWWWW --__(0.0)__-- -->
                 <div class = "searchTool">
                     <input type="text" class="input" placeholder="Find a place ...">
-                    <input type="button" value="Search" class="closeBtn">
+                    <input type="button" class="closeBtn">
                 </div>
         </section>
         <body>
             <section class = "quickLinks">
                 <div class = "quickBox">
-                    <img src="/img/stampTopper.png">
+                    <div class="circle"><img src="./img/stamp.png"></div>
                     <p>Stamp the restaurants you have been to</p>
                 </div>
                 <div class = "quickBox">
-                    <img src="/img/stampTopper.png">
+                    <div class="circle"><img src="./img/srch.png"></div>
                     <p>Search your Nearby Restaurants</p>
                 </div>
                 <div class = "quickBox">
-                    <img src="/img/stampTopper.png">
+                    <div class="circle"><img src="./img/people.png"></div>
                     <p>Latest Reviews and <br> Menus</p>
                 </div>
             </section>
@@ -65,7 +66,13 @@
                         </div>
                         <div class = "gallTag">
                             <h4> Michael's Food Place</h4>
-                            <h4>Rating *****</h4>
+                            <h4>Rating :<span class="ratings">
+                                <input type="radio" name="star1" class="star1"><label for="star1"></label>
+                                <input type="radio" name="star2" class="star2"><label for="star2"></label>
+                                <input type="radio" name="star3" class="star3"><label for="star3"></label>
+                                <input type="radio" name="star4" class="star4"><label for="star4"></label>
+                                <input type="radio" name="star5" class="star5"><label for="star5"></label>
+                            </span></h4>
                             <h4 class="reviews">See Reviews</h4>
                         </div>
                     </div>
@@ -75,7 +82,13 @@
                         </div>
                         <div class = "gallTag">
                             <h4>Kubuki's</h4>
-                            <h4>Rating *****</h4>
+                            <h4>Rating :<span class="ratings">
+                                <input type="radio" name="star1" class="star1"><label for="star1"></label>
+                                <input type="radio" name="star2" class="star2"><label for="star2"></label>
+                                <input type="radio" name="star3" class="star3"><label for="star3"></label>
+                                <input type="radio" name="star4" class="star4"><label for="star4"></label>
+                                <input type="radio" name="star5" class="star5"><label for="star5"></label>
+                            </span></h4>
                             <h4 class="reviews">See Reviews</h4>
                         </div>
                     </div>
@@ -85,7 +98,13 @@
                         </div>
                         <div class = "gallTag">
                             <h4>Figaroni Splendid</h4>
-                            <h4>Rating *****</h4>
+                            <h4>Rating :<span class="ratings">
+                                <input type="radio" name="star1" class="star1"><label for="star1"></label>
+                                <input type="radio" name="star2" class="star2"><label for="star2"></label>
+                                <input type="radio" name="star3" class="star3"><label for="star3"></label>
+                                <input type="radio" name="star4" class="star4"><label for="star4"></label>
+                                <input type="radio" name="star5" class="star5"><label for="star5"></label>
+                            </span></h4>
                             <h4 class = "reviews">See Reviews</h4 class = "reviews">
                         </div>
                     </div>

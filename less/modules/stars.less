@@ -1,0 +1,38 @@
+
+.ratings{
+    position: relative;
+    top: -18px;
+    left:80px;
+    display: flex;
+    
+    input{
+        display: none;
+    }
+    label{
+        display: block;
+        cursor: pointer;
+        width: 20px;
+    }
+    label:before{
+        content: '\f005';
+        font-family: fontAwesome;
+        position: relative;
+        display: inline-block;
+        color: @goldenRod;
+        opacity: 1;
+    }
+    label:after{
+        content: '\f005';
+        font-family: fontAwesome;
+        position: absolute;
+        top:0;
+        display: block;
+        color: darkgray;
+        opacity: 0;
+    }
+    label:hover:after,
+    label:hover ~ label:after,
+    input:checked ~ label:after{
+        opacity: 1;
+    }
+}

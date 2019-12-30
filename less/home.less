@@ -6,6 +6,7 @@
 @import './modules/hamburgerMenu.less';
 @import './modules/searchbar.less';
 @import './modules/quickBox';
+@import './modules/stars.less';
 @import './modules/galla.less';
 @import './modules/footer.less';
 
@@ -13,13 +14,12 @@
 .container{
     .containerAttr;
     .banner{
+        .flexCentered; 
         width: 100%;
         height: 459px;
-        background-image: url(/img/searchpicture.png);
+        background-image: url(../img/searchpicture-withburger.png);
         margin-bottom: @sectionGap;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        .dropShadow;
     }
     .quickLinks{
         .responsiveRow;
@@ -41,9 +41,9 @@
                  width: 342px; height: 207px;
                  .bookmark{float: right;margin: 10px;}
             }
-            .imgOne{ background-image: url(/img/foodplace1.png);}
-            .imgTwo{ background-image: url(/img/foodplace2.png);}
-            .imgThree{ background-image: url(/img/foodplace3.png);} 
+            .imgOne{ background-image: url(../img/foodplace1.png);}
+            .imgTwo{ background-image: url(../img/foodplace2.png);}
+            .imgThree{ background-image: url(../img/foodplace3.png);} 
             .gallTag{ .bodyFont(black,2rem);}
         }
         margin-bottom: @sectionGap;

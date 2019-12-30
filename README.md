@@ -5,15 +5,15 @@
       - Added the About, made this site work for both tablet and desktop screens.
         Cleaned Code, made it more legible, next I need to review their names and see, make sure they are clear.
       - Things to Figure Out & Do:
-            1) [ ] How Do You add the rating stars?
+            1) [x] How Do You add the rating stars?
             2) [x] How Do YOu add the search bar?
-            3) [ ] How will I build the Hamburger Menu for mobile?
+            3) [x] How will I build the Hamburger Menu for mobile?
             4) [ ] I need to add Team Photos and Names to The About page.
-            5) [ ] I need to Create the Mobile Layout.
+            5) [x] I need to Create the Mobile Layout.
             5) [x] Tweak the tablet layout on the home page, so that the banner         spans 100% when the container is bellow the containers max           possible size.
-            6) [ ] Design a Title Bar Log
+            6) [x] Design a Title Bar Log --made title a href
                      a) use it for the Nav bar as a Home Button as-well.
-            7) [ ] Edit the Banner Photo, make it relate more to a restuarant.
+            7) [x] Edit the Banner Photo, make it relate more to a restuarant.
             8) [ ] Make the Galleries react on hover.
                      a) Current Idea is to pop up a hidden div, telling each team members favorite resturant.
 
@@ -24,3 +24,14 @@
       - Tablet banner change, the rest looks to fit just fine, done so by changing the  containerAttr (removed tablet @media, website scales better without a defined step for it)
       - Mobile Layout Just needs to have a nav menu created.
       - Created a Hamburger Menu using only CSS animations, will populate the screen with an overlay and access to all the nav bar options, this will only apear on mobile devices, tablet and desktop have the default nav bar ontop.
+      -Tweaked Tablet sizing for gallery on about page.
+      -Added a stars to the ratings that react on hover.
+
+12/29 -Tweaked the quick links bellow the banner, at first I made the images
+       static with photoshop, then relized all I had to do was create a parent dive
+       to contain the image vector, and it would be simplter and can be easily changed
+       down the line.
+      - Added photos to about page.
+        - Some still need to send me one.... including myself
+        - Some need a quick tweak in PS to make the size fit
+        - Some may want to change what they have.

@@ -138,16 +138,24 @@ html {
   margin: 0 auto;
   max-width: 1280px;
 }
+.flexCentered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .responsiveRow {
   display: flex;
   justify-content: space-around;
   flex-flow: wrap;
 }
+.dropShadow {
+  box-shadow: 4px 4px 6px grey;
+}
 .menuWrap {
   visibility: hidden;
   position: fixed;
   top: 16.66666667px;
-  right: 70px;
+  right: 65px;
   z-index: 1;
 }
 @media (max-width:600px) {
@@ -175,8 +183,8 @@ html {
   padding: 1rem;
   background-color: #DAA520;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 .menuWrap .burger > div {
   position: relative;
@@ -184,8 +192,8 @@ html {
   height: 2px;
   background-color: #ffffff;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   transition: all 0.4s ease;
 }
 .menuWrap .burger > div:before,
@@ -232,8 +240,8 @@ html {
   visibility: hidden;
   overflow: hidden;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 .menuWrap .menu > div {
   background-color: rgba(25, 25, 112, 0.7);
@@ -241,9 +249,9 @@ html {
   width: 200vw;
   height: 200vh;
   display: flex;
-  flex: none;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex: none;
   transform: scale(0);
   transition: all 0.4s ease;
 }
@@ -269,15 +277,18 @@ html {
   text-decoration: underline;
 }
 header {
+  margin-left: 16.66666667px;
+  margin-right: 16.66666667px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 100px;
 }
-header h1 {
+header a {
   color: #DAA520;
   font-size: 3.5rem;
   font-family: 'Girassol', cursive;
+  text-decoration: none;
 }
 header nav {
   max-width: 400px;
@@ -306,10 +317,13 @@ header nav .join {
   justify-content: space-around;
   flex-flow: wrap;
 }
+.gallery .gallOpt {
+  margin-bottom: 25px;
+  box-shadow: 4px 4px 6px grey;
+}
 .gallery .gallTag {
   display: flex;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 10px;
   flex-flow: column;
 }
 .gallery .gallTag .reviews {
@@ -366,6 +380,11 @@ footer .footerNav a {
   width: 65%;
   margin: 0 auto;
 }
+@media (max-width:1000px) {
+  .container .ourTeam {
+    width: 70vw;
+  }
+}
 .container .ourTeam h2 {
   margin-bottom: 25px;
   text-align: center;
@@ -389,12 +408,12 @@ footer .footerNav a {
 }
 .container .ourTeam .gallery .gallOpt .gallTag h4 {
   color: #DAA520;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-family: 'Girassol', cursive;
   margin-bottom: 8.33333333px;
 }
 .container .ourTeam .gallery .gallOpt .gallTag h5 {
   color: #DAA520;
-  font-size: 1.75rem;
-  font-family: 'Girassol', cursive;
+  font-size: 1.4rem;
+  font-family: 'Raleway', sans-serif;
 }

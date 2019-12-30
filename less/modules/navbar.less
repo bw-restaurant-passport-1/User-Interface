@@ -1,9 +1,14 @@
 header{
+    margin-left: @sectionGap/3;
+    margin-right: @sectionGap/3;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100px;
-    h1{.headerFont(@goldenRod,3.5rem);}
+    a{
+        .headerFont(@goldenRod,3.5rem);
+        text-decoration: none;
+    }
     nav{
         max-width: 400px;
         display: flex;

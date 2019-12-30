@@ -138,21 +138,32 @@ html {
   margin: 0 auto;
   max-width: 1280px;
 }
+.flexCentered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .responsiveRow {
   display: flex;
   justify-content: space-around;
   flex-flow: wrap;
 }
+.dropShadow {
+  box-shadow: 4px 4px 6px grey;
+}
 header {
+  margin-left: 16.66666667px;
+  margin-right: 16.66666667px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 100px;
 }
-header h1 {
+header a {
   color: #DAA520;
   font-size: 3.5rem;
   font-family: 'Girassol', cursive;
+  text-decoration: none;
 }
 header nav {
   max-width: 400px;
@@ -180,7 +191,7 @@ header nav .join {
   visibility: hidden;
   position: fixed;
   top: 16.66666667px;
-  right: 70px;
+  right: 65px;
   z-index: 1;
 }
 @media (max-width:600px) {
@@ -208,8 +219,8 @@ header nav .join {
   padding: 1rem;
   background-color: #DAA520;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 .menuWrap .burger > div {
   position: relative;
@@ -217,8 +228,8 @@ header nav .join {
   height: 2px;
   background-color: #ffffff;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   transition: all 0.4s ease;
 }
 .menuWrap .burger > div:before,
@@ -265,18 +276,18 @@ header nav .join {
   visibility: hidden;
   overflow: hidden;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 .menuWrap .menu > div {
-  background-color: rgba(25, 25, 112, 0.7);
+  background-color: rgba(25, 25, 112, 0.8);
   border-radius: 50%;
   width: 200vw;
   height: 200vh;
   display: flex;
-  flex: none;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex: none;
   transform: scale(0);
   transition: all 0.4s ease;
 }
@@ -301,19 +312,51 @@ header nav .join {
 .menuWrap .menu > div > div ul a:hover {
   text-decoration: underline;
 }
+.searchTool {
+  display: flex;
+  justify-content: baseline;
+}
 .searchTool .input {
-  height: 30px;
-  width: 400px;
+  color: grey;
+  font-size: 2rem;
+  font-family: 'Raleway', sans-serif;
+  border: 0;
+  padding-left: 10px;
+  height: 45px;
+  width: 50vw;
+  max-width: 700px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
+.searchTool .closeBtn {
+  width: 100px;
+  height: 45px;
+  background-color: #DAA520;
+  background-image: url(/img/searchIcon.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 0;
+  border-left: solid grey 2px;
+}
+@media (max-width:600px) {
+  .searchTool .closeBtn {
+    width: 15vw;
+  }
+}
 .quickBox {
   width: 380px;
+  margin-bottom: 25px;
 }
-.quickBox img {
-  display: block;
+.quickBox .circle {
   margin: 0 auto;
   margin-bottom: -20px;
+  width: 67px;
+  height: 67px;
+  background-color: #191970;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .quickBox p {
   height: 120px;
@@ -323,16 +366,60 @@ header nav .join {
   font-family: 'Special Elite', cursive;
   text-align: center;
   border: #191970 solid 2px;
+  box-shadow: 4px 4px 6px grey;
+}
+.ratings {
+  position: relative;
+  top: -18px;
+  left: 80px;
+  display: flex;
+}
+.ratings input {
+  display: none;
+}
+.ratings label {
+  display: block;
+  cursor: pointer;
+  width: 20px;
+}
+.ratings label:before {
+  content: '\f005';
+  font-family: fontAwesome;
+  position: relative;
+  display: inline-block;
+  color: #DAA520;
+  opacity: 1;
+}
+.ratings label:after {
+  content: '\f005';
+  font-family: fontAwesome;
+  position: absolute;
+  top: 0;
+  display: block;
+  color: darkgray;
+  opacity: 0;
+}
+.ratings label:hover:after,
+.ratings label:hover ~ label:after,
+.ratings input:checked ~ label:after {
+  opacity: 1;
 }
 .gallery {
   display: flex;
   justify-content: space-around;
   flex-flow: wrap;
 }
+.gallery .gallOpt {
+  margin-bottom: 25px;
+  transition: all 0.2s ease;
+  box-shadow: 4px 4px 6px grey;
+}
+.gallery .gallOpt:hover {
+  transform: scale(1.25);
+}
 .gallery .gallTag {
   display: flex;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 10px;
   flex-flow: column;
 }
 .gallery .gallTag .reviews {
@@ -370,13 +457,14 @@ footer .footerNav a {
   max-width: 1280px;
 }
 .container .banner {
-  width: 100%;
-  height: 459px;
-  background-image: url(/img/searchpicture.png);
-  margin-bottom: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 459px;
+  background-image: url(../img/searchpicture-withburger.png);
+  margin-bottom: 50px;
+  box-shadow: 4px 4px 6px grey;
 }
 .container .quickLinks {
   display: flex;
@@ -408,13 +496,13 @@ footer .footerNav a {
   margin: 10px;
 }
 .container .nearYou .gallery .gallOpt .imgOne {
-  background-image: url(/img/foodplace1.png);
+  background-image: url(../img/foodplace1.png);
 }
 .container .nearYou .gallery .gallOpt .imgTwo {
-  background-image: url(/img/foodplace2.png);
+  background-image: url(../img/foodplace2.png);
 }
 .container .nearYou .gallery .gallOpt .imgThree {
-  background-image: url(/img/foodplace3.png);
+  background-image: url(../img/foodplace3.png);
 }
 .container .nearYou .gallery .gallOpt .gallTag {
   color: black;
