@@ -46,8 +46,36 @@
                     margin-bottom: @innerSecGap/3;
                 }
                 h5{ .bodyFont(@goldenRod,1.4rem);}
-            } 
-        }
-            
+            }   
+        }   
     }
 };
+@media(@mobile){
+    .container{
+        .ourMission{
+            width: 95%;
+        }
+        .ourTeam{
+            width: 100%;
+            .gallery{
+                width:100%;
+                flex-flow: column;
+                display: flex;
+                .gallOpt{
+                    display: flex;
+                    width: 95%;
+                    height: 175px;
+                    margin-bottom: 10px;
+                    .gallImg .imgSz{
+                        margin-left: 10px;
+                        height: 150px;
+                    }
+                    .gallTag{
+                        width: 100%;
+                        align-self: center;
+                    }
+                }
+            }
+        }
+    } 
+}

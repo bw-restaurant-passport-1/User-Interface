@@ -244,7 +244,7 @@ html {
   align-items: center;
 }
 .menuWrap .menu > div {
-  background-color: rgba(25, 25, 112, 0.7);
+  background-color: rgba(25, 25, 112, 0.8);
   border-radius: 50%;
   width: 200vw;
   height: 200vh;
@@ -319,7 +319,11 @@ header nav .join {
 }
 .gallery .gallOpt {
   margin-bottom: 25px;
+  transition: all 0.2s ease;
   box-shadow: 4px 4px 6px grey;
+}
+.gallery .gallOpt:hover {
+  transform: scale(1.25);
 }
 .gallery .gallTag {
   display: flex;
@@ -416,4 +420,31 @@ footer .footerNav a {
   color: #DAA520;
   font-size: 1.4rem;
   font-family: 'Raleway', sans-serif;
+}
+@media (max-width:600px) {
+  .container .ourMission {
+    width: 95%;
+  }
+  .container .ourTeam {
+    width: 100%;
+  }
+  .container .ourTeam .gallery {
+    width: 100%;
+    flex-flow: column;
+    display: flex;
+  }
+  .container .ourTeam .gallery .gallOpt {
+    display: flex;
+    width: 95%;
+    height: 175px;
+    margin-bottom: 10px;
+  }
+  .container .ourTeam .gallery .gallOpt .gallImg .imgSz {
+    margin-left: 10px;
+    height: 150px;
+  }
+  .container .ourTeam .gallery .gallOpt .gallTag {
+    width: 100%;
+    align-self: center;
+  }
 }

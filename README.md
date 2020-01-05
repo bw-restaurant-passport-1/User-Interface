@@ -14,7 +14,7 @@
             6) [x] Design a Title Bar Log --made title a href
                      a) use it for the Nav bar as a Home Button as-well.
             7) [x] Edit the Banner Photo, make it relate more to a restuarant.
-            8) [ ] Make the Galleries react on hover.
+            8) [x] Make the Galleries react on hover.
                      a) Current Idea is to pop up a hidden div, telling each team members favorite resturant.
 
 12/19 - Slow Day, just read up on how to create search bars, menus and what not
@@ -35,3 +35,6 @@
         - Some still need to send me one.... including myself
         - Some need a quick tweak in PS to make the size fit
         - Some may want to change what they have.
+
+1/5   - Changed the About Page, now it's layout is better suited for a 
+        mobile layout. Now utilizes more width.
