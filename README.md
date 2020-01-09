@@ -8,7 +8,7 @@
             1) [x] How Do You add the rating stars?
             2) [x] How Do YOu add the search bar?
             3) [x] How will I build the Hamburger Menu for mobile?
-            4) [ ] I need to add Team Photos and Names to The About page.
+            4) [x] I need to add Team Photos and Names to The About page.
             5) [x] I need to Create the Mobile Layout.
             5) [x] Tweak the tablet layout on the home page, so that the banner         spans 100% when the container is bellow the containers max           possible size.
             6) [x] Design a Title Bar Log --made title a href
@@ -39,3 +39,7 @@
 1/5   - Changed the About Page, now it's layout is better suited for a 
         mobile layout. Now utilizes more width.
       - All I have left to do is edit the team photos.
+
+1/9   - Added  Final photos
+      - fixed mobile over lap in about page
+      - added Sign in links and Join

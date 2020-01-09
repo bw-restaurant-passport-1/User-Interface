@@ -449,4 +449,8 @@ footer .footerNav a {
     width: 100%;
     align-self: center;
   }
+  .container .ourTeam .gallery .gallOpt:hover {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
 }
