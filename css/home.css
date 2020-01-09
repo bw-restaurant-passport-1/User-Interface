@@ -487,6 +487,9 @@ footer .footerNav a {
   font-size: 3rem;
   font-family: 'Special Elite', cursive;
 }
+.container .nearYou .gallery .gallOpt {
+  background-color: white;
+}
 .container .nearYou .gallery .gallOpt .gallImg {
   width: 342px;
   height: 207px;

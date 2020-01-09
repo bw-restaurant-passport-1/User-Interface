@@ -38,3 +38,4 @@
 
 1/5   - Changed the About Page, now it's layout is better suited for a 
         mobile layout. Now utilizes more width.
+      - All I have left to do is edit the team photos.
